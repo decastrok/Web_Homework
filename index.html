@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+
+  <body>
+    <!-- Headline -->
+
+    <div class="header">
+      <div>Latitude</div>
+      <div class='piss'>
+        <div id='plot'>
+          <Select name="Plots" onChange="window.location.href=this.value">
+            <option value="" selected disabled hidden>Plots</option>
+            <option value="Lat vs Cloudiness.html">Lat vs Clouidness</option>
+            <option value="Lat vs Humidity.html">Lat vs Humidity</option>
+            <option value="Lat vs Temperature.html">Lat vs Temperature</option>
+            <option value="Lat vs Wind Speed.html">Lat vs Wind Speed</option>
+
+          </Select>
+        </div>
+        <div id="navigation">
+          <div class="link">
+            <a href="Comparison.html">Comparison </a>
+            <a href="Data.html">Data</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-set">
+      <figure class="box box-1">
+        <h2>Summary: Lattitude vs. X</h2>
+        <div id='MainText'>
+          <p1>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+            accomplish this analysis,
+            we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 Cities. </p1>
+          <br>
+          <br>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+          Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+          source data and
+          visualizations created as part of the analysis, as well as the explanation and descriptions of any trends and
+          corrilations witnessed.
+          </p2>
+        </div>
+        <!-- Image -->
+        <img src="Latitude Vs Temperature.png" alt="Lat Vs. Temp" height="225" width="225" />
+        <br>
+      </figure>
+
+
+      <figure class="box box-2">
+        <h3>Visualizations</h3>
+        <div>
+          <!-- Image -->
+          <img src="Latitude Vs Cloudiness.png" class="rounded float-left" alt="Lat Vs. Cloudiness" height="100"
+            width="100" onclick="window.open('Lat vs Cloudiness.html', '_blank');" />
+          <!-- Image -->
+          <img src="Latitude Vs Humidity.png" class="rounded float-right" alt="Lat Vs. Humidity" height="100"
+            width="100" onclick="window.open('Lat vs Humidity.html', '_blank');" />
+          <!-- Image -->
+          <img src="Latitude Vs Temperature.png" class="rounded float-left" alt="Lat Vs. Temp" height="100" width="100"
+            onclick="window.open('Lat vs Temperature.html', '_blank');" />
+          <!-- Image -->
+          <img src="Latitude Vs Wind Speed.png" class="rounded float-right" alt="Lat Vs. Wind Speed" height="100"
+            width="100" onclick="window.open('Lat vs Wind Speed.html', '_blank');" />
+        </div>
+      </figure>
+
+    </div>
+
+
+
+  </body>
+
+</html>

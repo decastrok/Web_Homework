@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Wind Speed</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <!-- Headline -->
+
+    <div class="header">
+      <div><a href="index.html"> Latitude</a></div>
+      <div class='piss'>
+        <div id='plot'>
+          <Select name="Plots" onChange="window.location.href=this.value">
+            <option value="" selected disabled hidden>Plots</option>
+            <option value="Lat vs Cloudiness.html">Lat vs Clouidness</option>
+            <option value="Lat vs Humidity.html">Lat vs Humidity</option>
+            <option value="Lat vs Temperature.html">Lat vs Temperature</option>
+            <option value="Lat vs Wind Speed.html">Lat vs Wind Speed</option>
+
+          </Select>
+        </div>
+        <div id="navigation">
+          <div class="link">
+            <a href="Comparison.html">Comparison </a>
+            <a href="Data.html">Data</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>Wind Speed</h1>
+    <!-- Image -->
+    <img src="Latitude Vs Wind Speed.png" alt="Lat Vs. Wind Speed" />
+
+    <p>This graph shows there was no coorolation between Latatude and Wind Speed. There does seem to be a normal Wind
+      Speed of
+      less than 15 MPH.
+    </p>
+
+    <h3>Visualizations</h3>
+
+    <!-- Image -->
+    <img src="Latitude Vs Cloudiness.png" alt="Lat Vs. Cloudiness" height="225" width="225"
+      onclick="window.open('Lat vs Cloudiness.html', '_blank');" />
+    <!-- Image -->
+    <img src="Latitude Vs Humidity.png" alt="Lat Vs. Humidity" height="225" width="225"
+      onclick="window.open('Lat vs Humidity.html', '_blank');" />
+    <!-- Image -->
+    <img src="Latitude Vs Temperature.png" alt="Lat Vs. Temp" height="225" width="225"
+      onclick="window.open('Lat vs Temperature.html', '_blank');" />
+    <!-- Image -->
+    <img src="Latitude Vs Wind Speed.png" alt="Lat Vs. Wind Speed" height="225" width="225"
+      onclick="window.open('Lat vs Wind Speed.html', '_blank');" />
+
+  </Body>

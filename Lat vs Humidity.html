@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Humidity</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <!-- Headline -->
+
+    <div class="header">
+      <div><a href="index.html"> Latitude</a></div>
+      <div class='piss'>
+        <div id='plot'>
+          <Select name="Plots" onChange="window.location.href=this.value">
+            <option value="" selected disabled hidden>Plots</option>
+            <option value="Lat vs Cloudiness.html">Lat vs Clouidness</option>
+            <option value="Lat vs Humidity.html">Lat vs Humidity</option>
+            <option value="Lat vs Temperature.html">Lat vs Temperature</option>
+            <option value="Lat vs Wind Speed.html">Lat vs Wind Speed</option>
+
+          </Select>
+        </div>
+        <div id="navigation">
+          <div class="link">
+            <a href="Comparison.html">Comparison </a>
+            <a href="Data.html">Data</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1>Humidity</h1>
+    <!-- Image -->
+    <img src="Latitude Vs Humidity.png" alt="Lat Vs. Humidity" />
+
+    <p>The data populated the graph showing a sparatic representation of Humidity when relating to Latitude. However, if
+      you
+      look closely, there is a pattern emerging showing a potential upside down 'U' indicating the closer to the
+      equator, the
+      higher the Humidity. This would indicate that the higher the temperature, they higher the Humidity. This makes
+      sense because
+      warmer air does hold more moisture in the air, which is a key element for Humidity.
+    </p>
+
+    <h3>Visualizations</h3>
+
+    <!-- Image -->
+    <img src="Latitude Vs Cloudiness.png" alt="Lat Vs. Cloudiness" height="225" width="225"
+      onclick="window.open('Lat vs Cloudiness.html', '_blank');" />
+    <!-- Image -->
+    <img src="Latitude Vs Humidity.png" alt="Lat Vs. Humidity" height="225" width="225"
+      onclick="window.open('Lat vs Humidity.html', '_blank');" />
+    <!-- Image -->
+    <img src="Latitude Vs Temperature.png" alt="Lat Vs. Temp" height="225" width="225"
+      onclick="window.open('Lat vs Temperature.html', '_blank');" />
+    <!-- Image -->
+    <img src="Latitude Vs Wind Speed.png" alt="Lat Vs. Wind Speed" height="225" width="225"
+      onclick="window.open('Lat vs Wind Speed.html', '_blank');" />
+
+  </Body>

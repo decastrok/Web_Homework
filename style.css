@@ -1,0 +1,104 @@
+h1 {
+  text-align: left;
+  color: royalblue;
+}
+.header {
+ background-color: royalblue;
+height: 100px;
+font-size: 30px;
+padding-left:
+
+}
+.heading {
+  display: inline;
+}
+
+.piss {
+  float: right;
+  text-align: right;
+  position: top;
+}
+.link {
+
+    color: white;
+    /* padding-bottom: 5px; */
+   }
+
+.link a {
+  color: white;
+   font-size: 15px
+ }
+
+.link a:hover {
+  color: white;
+}
+.link.visted {
+  color: white;
+}
+
+h2 {
+  color: royalblue;
+  text-align: center;
+}
+
+h3 {
+  color: royalblue;
+  text-align: center;
+}
+
+img {
+  box-shadow: 10px 10px 5px black;
+
+}
+
+section {
+  background-color: #000;
+}
+
+p {
+  font-size: 15px;
+  color: black;
+}
+
+
+ul {
+  border-style: solid;
+  color: gray;
+}
+
+.box-set {
+    position: relative;
+    height: 500px;
+    background: lightgrey;
+}
+
+.box {
+    /* Absolute Position */
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    background: white;
+    border: 2px solid black;
+  }
+
+  /* Box rules: percentages define anchors (i.e. position of each box relative to enclosing box) */
+
+  .box-1 {
+    top: 0;
+    left: -2%;
+  }
+
+  .box-2 {
+    top: 25;
+    right: -40px;
+  }
+  #navigation li a {
+     font-weight: bold;
+     color: black;
+     text-decoration: none;
+ }
+
+ #navigation li a:hover {
+     font-weight: bold;
+     color: gray;
+ }
